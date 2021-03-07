@@ -5,19 +5,21 @@ import { FormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./home/hello.component";
 import { AppRoutingModule } from "./app-routing.module";
-import { TodoComponent } from "./todo/todo.component";
+import { TodoManagerComponent } from "./todo/todo-manager.component";
 import { TodoInputComponent } from "./todo/todo-input.component";
 import { TodoItemComponent } from "./todo/todo-item.component";
+import { TodoListService } from "./todo-list.service";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
   declarations: [
     AppComponent,
     HelloComponent,
-    TodoComponent,
+    TodoManagerComponent,
     TodoInputComponent,
     TodoItemComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [TodoListService]
 })
 export class AppModule {}

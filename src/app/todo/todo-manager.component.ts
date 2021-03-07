@@ -2,11 +2,10 @@ import { Component, OnInit } from "@angular/core";
 import { TodoItem } from "./todo-item";
 
 @Component({
-  // selector: "app-todo",
-  templateUrl: "./todo.component.html",
-  styleUrls: ["./todo.component.css"]
+  templateUrl: "./todo-manager.component.html",
+  styleUrls: ["./todo-manager.component.css"]
 })
-export class TodoComponent implements OnInit {
+export class TodoManagerComponent implements OnInit {
   title = "What To Do?";
   todoList: TodoItem[] = [
     { title: "install NodeJS" },

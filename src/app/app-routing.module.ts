@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 
 import { HelloComponent } from "./home/hello.component";
-import { TodoComponent } from "./todo/todo.component";
+import { TodoManagerComponent } from "./todo/todo-manager.component";
 
 @NgModule({
   declarations: [],
@@ -12,7 +12,7 @@ import { TodoComponent } from "./todo/todo.component";
     RouterModule.forRoot(
       [
         { path: "home", component: HelloComponent },
-        { path: "todo", component: TodoComponent },
+        { path: "todo", component: TodoManagerComponent },
         { path: "", redirectTo: "home", pathMatch: "full" },
         { path: "**", redirectTo: "home", pathMatch: "full" }
       ],
