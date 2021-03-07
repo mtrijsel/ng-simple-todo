@@ -1,25 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { TodoItem } from './todo-item';
+import { Component, OnInit } from "@angular/core";
+import { TodoItem } from "./todo-item";
 
 @Component({
-  selector: 'app-todo',
-  templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.css']
+  selector: "app-todo",
+  templateUrl: "./todo.component.html",
+  styleUrls: ["./todo.component.css"]
 })
 export class TodoComponent implements OnInit {
-  title = 'todo-list';
+  title = "todo-list";
   todoList: TodoItem[] = [
-    {title: 'install NodeJS' },
-    {title: 'install Angular CLI'},
-    {title: 'create new app'},
-    {title: 'serve app'},
-    {title: 'develop app'},
-    {title: 'deploy app'},
+    { title: "install NodeJS" },
+    { title: "install Angular CLI" },
+    { title: "create new app" },
+    { title: "serve app" },
+    { title: "develop app" },
+    { title: "deploy app" }
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  addTodoItem(title: string): void {
+    this.todoList.push({ title });
   }
-
 }

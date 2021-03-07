@@ -6,7 +6,7 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./home/hello.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { TodoComponent } from "./todo/todo.component";
-import { InputButtonUnitComponent } from "./input-button-unit/input-button-unit.component";
+import { TodoInputComponent } from "./todo/todo-input.component";
 import { TodoItemComponent } from "./todo/todo-item.component";
 
 @NgModule({
@@ -15,7 +15,7 @@ import { TodoItemComponent } from "./todo/todo-item.component";
     AppComponent,
     HelloComponent,
     TodoComponent,
-    InputButtonUnitComponent,
+    TodoInputComponent,
     TodoItemComponent
   ],
   bootstrap: [AppComponent]
