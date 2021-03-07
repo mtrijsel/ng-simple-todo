@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 
 import { HelloComponent } from "./home/hello.component";
-import { InputButtonUnitComponent } from "../input-button-unit/input-button-unit.component";
+import { TodoComponent } from "./todo/todo.component";
 
 @NgModule({
   declarations: [],
@@ -12,7 +12,7 @@ import { InputButtonUnitComponent } from "../input-button-unit/input-button-unit
     RouterModule.forRoot(
       [
         { path: "home", component: HelloComponent },
-        { path: "tasks", component: InputButtonUnitComponent },
+        { path: "todo", component: TodoComponent },
         { path: "", redirectTo: "home", pathMatch: "full" },
         { path: "**", redirectTo: "home", pathMatch: "full" }
       ],
