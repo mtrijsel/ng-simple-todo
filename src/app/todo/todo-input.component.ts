@@ -7,6 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 })
 export class TodoInputComponent implements OnInit {
   @Output() submit: EventEmitter<string> = new EventEmitter();
+  title: string = "";
 
   constructor() {}
 
@@ -14,5 +15,6 @@ export class TodoInputComponent implements OnInit {
 
   changeTitle(title: string): void {
     this.submit.emit(title);
+    this.title = "";
   }
 }

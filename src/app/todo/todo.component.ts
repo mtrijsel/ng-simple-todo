@@ -7,7 +7,7 @@ import { TodoItem } from "./todo-item";
   styleUrls: ["./todo.component.css"]
 })
 export class TodoComponent implements OnInit {
-  title = "todo-list";
+  title = "What To Do?";
   todoList: TodoItem[] = [
     { title: "install NodeJS" },
     { title: "install Angular CLI" },
