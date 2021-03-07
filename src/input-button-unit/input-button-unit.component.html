@@ -1,0 +1,10 @@
+<p>
+  input-button-unit works!
+</p>
+<h1>{{title}}</h1>
+<input 
+  #inputElementRef
+  [value]="title"
+/>
+
+<button (click)="changeTitle(inputElementRef.value)">Save</button>
