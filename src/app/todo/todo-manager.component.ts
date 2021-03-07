@@ -19,4 +19,8 @@ export class TodoManagerComponent implements OnInit {
   addTodoItem(title: string): void {
     this.service.addTodoItem({ title });
   }
+
+  removeTodoItem(item: TodoItem) {
+    this.service.removeTodoItem(item);
+  }
 }
